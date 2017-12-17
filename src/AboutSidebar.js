@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './Sidebar.css';
 
-class About extends Component {
+class ArchivesSidebar extends Component {
     render() {
         return (
             <div className="sidebar-module sidebar-module-inset">
@@ -10,4 +11,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default ArchivesSidebar;

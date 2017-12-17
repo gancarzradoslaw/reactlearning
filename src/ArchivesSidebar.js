@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './Sidebar.css';
 
-class Archives extends Component {
+class ArchivesSidebar extends Component {
     render() {
         return (
             <div className="sidebar-module">
@@ -24,4 +25,4 @@ class Archives extends Component {
     }
 }
 
-export default Archives;
+export default ArchivesSidebar;

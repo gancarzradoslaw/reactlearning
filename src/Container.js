@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Social from './Social';
-import Archives from './Archives';
-import About from './About';
+import ArchivesSidebar from './ArchivesSidebar';
+import AboutSidebar from './AboutSidebar';
 import BlogPost from './BlogPost';
+import BlogPagination from './BlogPagination';
+import './Container.css';
 
 class Container extends Component {
   render() {
@@ -88,15 +90,12 @@ class Container extends Component {
         <div className="row">
           <div className="col-sm-8 blog-main">
             {list}
-            <nav className="blog-pagination">
-              <a className="btn btn-outline-primary" href="#">Older</a>
-              <a className="btn btn-outline-secondary disabled" href="#">Newer</a>
-            </nav>
+          <BlogPagination />
           </div>
 
           <aside className="col-sm-3 ml-sm-auto blog-sidebar">
-            <About />
-            <Archives />
+            <AboutSidebar />
+            <ArchivesSidebar />
             <Social />
           </aside>
         </div>

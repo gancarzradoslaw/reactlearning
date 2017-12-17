@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Sidebar.css';
 
 class Social extends Component {
     render() {
